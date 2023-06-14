@@ -14,7 +14,7 @@ import spacy
 class NPLGDRIVER():
     # If modifying these scopes, delete the file token.json.
     SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly']
-    cred = None
+    creds = None
     service = None
     def __init__(self, *args, **kwargs):
         super(NPLGDRIVER, self).__init__(*args, **kwargs)
