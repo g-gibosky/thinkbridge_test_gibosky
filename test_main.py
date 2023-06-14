@@ -58,7 +58,9 @@ def main():
     try:
         # Call the Drive v3 API
         g_drive = NPLGDRIVER()
-        items = g_drive.load_documents(query="Windows is from Microsoft")
+        print('Enter Query:')
+        query: str = input().strip()
+        items = g_drive.load_documents(query=query)
         if not items:
             print('No files found.')
             return
